@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experimento IA - Raiz Quadrada</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>🍪 Ai Clicker</h1>
+        <p>Cookies: <span id="cookies">0</span></p>
+        <span id="number"></span>
+        <button onclick="getReport()">Extrair Relatório</button>
+    </header>
+    <main>
+        <button onclick="handleClick()" class="cookie-btn">🍪</button>
+    </main>
+    <footer>
+        <details>
+            <summary>Tabela para análise</summary>
+            <table id="history" border="1">
+                <thead>
+                    <th>Número</th>
+                    <th>Real</th>
+                    <th>IA</th>
+                    <th>Proximidade</th>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </details>
+        <div class="store">
+            <h2>🛒 Loja</h2>
+            <button class="buy-btn auto-click" id="auto" onclick="enableAutoClick()">
+                <span>🤑 AutoClicker</span>
+                <p>$20</p>
+            </button>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
